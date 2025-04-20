@@ -15,6 +15,7 @@ Also user can add comment, reply to any comment, edit own comment. Plus there is
 - No React Query - Only Next JS server state
 - Mutations using Server Action
 - No Form library used - React's useFormStatus & useActionState hooks to the rescue
+- Responsive UI with Tailwind
 - Sonner Toast Library
 
 ## Setup

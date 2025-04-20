@@ -53,7 +53,7 @@ export async function updateVideo(prevState: unknown, formData: FormData) {
 
     // It seems that Youtube is little latent in updating meta, and returning at same time
     // TODO: Try to use useOptimistic
-    await new Promise((res) => setTimeout(res, 200));
+    // await new Promise((res) => setTimeout(res, 200));
 
     revalidateTag("videos");
 
@@ -117,7 +117,7 @@ export async function updateComment(prevState: unknown, formData: FormData) {
 
     // It seems that Youtube is little latent in updating meta, and returning at same time
     // TODO: Try to use useOptimistic
-    await new Promise((res) => setTimeout(res, 200));
+    // await new Promise((res) => setTimeout(res, 200));
 
     revalidateTag("videos");
 
@@ -182,7 +182,7 @@ export async function replyToComment(prevState: unknown, formData: FormData) {
     // Replying to a comment take too long on YouTube to return it as a comment, so sleeping for a full minute
     // But dont worry, we are updating the UI to inform user via Loading toast
     // TODO: Try to use useOptimistic
-    await new Promise((res) => setTimeout(res, 50000));
+    // await new Promise((res) => setTimeout(res, 50000));
 
     revalidateTag("videos");
 
@@ -253,7 +253,7 @@ export async function addComment(prevState: unknown, formData: FormData) {
     // Replying to a comment take too long on YouTube to return it as a comment, so sleeping for a full minute
     // But dont worry, we are updating the UI to inform user via Loading toast
     // TODO: Try to use useOptimistic
-    await new Promise((res) => setTimeout(res, 50000));
+    // await new Promise((res) => setTimeout(res, 50000));
 
     revalidateTag("videos");
 

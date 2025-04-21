@@ -39,6 +39,10 @@ create table public.events (
 - Run `pnpm i`
 - Go to http://localhost:3000
 
+## Future Improvements
+- Replace Auth.JS with Clerk or Manual OAuth handling
+- Try to render the state returned as response of YouTube's Mutation (POST, PUT) APIs, instead of re-fetching them from GET YouTube APIs.
+
 ### Support
 - Email: raghavvnarang@gmail.com
 - Linkedin: https://www.linkedin.com/in/raghav-narang/
